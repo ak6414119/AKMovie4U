@@ -62,6 +62,14 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js">
+        function searchMovie() {
+  var inputted = document.getElementById("searchinput").value;
+  inputted = inputted.toLowerCase();
+  var searchForm = document.getElementById("searchForm");
+  searchForm.action = "#"+inputted;
+  searchForm.submit();
+}
+</script>
   </body>
 </html>
