@@ -58,3 +58,13 @@
   position: absolute;
   top: 0.5vh;
 }
+
+
+a{
+  text-decoration: none;
+}
+
+.main p {
+  color: white;
+}
+
