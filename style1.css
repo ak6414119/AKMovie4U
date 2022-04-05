@@ -36,6 +36,7 @@
 .container img{
   position: relative;
   left: 10vw;
+  border-radius: 5px;
   
 }
 
