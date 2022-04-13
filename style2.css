@@ -1,34 +1,43 @@
-img{
+img {
   width: 90vw;
   position: relative;
   left: 2.5vw;
   border-radius: 5px;
 }
-h2{
+
+h2 {
   color: #FF7474D6;
   font-size: 3rem;
   text-align: center;
   text-shadow: 1vh 1vw 10px;
 }
-h3{
+
+h3 {
   text-align: center;
 }
 
-h3 a{
+h3 a {
   text-decoration: none;
   color: #1FFF00;
 }
 
-i{
+i {
   position: absolute;
   left: 60vw;
   color: white;
 }
 
-iframe{
-width: 90vw;
-border-radius: 5px;
-position: absolute;
-left: 5vw;
-margin-bottom: 50vh;
+iframe {
+  width: 95vw;
+  border-radius: 10px;
+  left: 0vw;
+  margin-bottom: 2vh;
+}
+
+#ipl .download h4{
+text-align: center;
+color: #00FFEB;
+font-size: 2rem;
+text-align: center;
+text-shadow: 1vh 1vw 10px;
 }
