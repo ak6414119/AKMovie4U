@@ -29,7 +29,7 @@
 .container img , .image{
   display: inline;
   width: 75vw;
-  height: 40vh;
+  height: auto;
   text-align: center;
 }
 
