@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  img{
+    width: 20vw;
+    display: block;
+    margin-top: 5vh;
+  }
+</style>
+
+
+<body>
+  <div>
+    <video src="" width=100% height=100% type="application/x-shockwave-flash" autoplay controls id="player">
+    </video>
+  </div>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNG0HP7wkCTIrBB4PF6z0yWxDTLcMPEKWbcw&usqp=CAU" onclick="starSports1Hd()">
+  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSpIyEeuNo2SUqLwm_yAx31cxRbn0gXc8ytw&usqp=CAU" onclick="starPlusHd()">
+ 
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9l6bqrYddcEvZYFfg7Qx6m2b1kT_LKzKvuA&usqp=CAU" onclick="starGoldHd()">
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa15X-xeKIr5yJXRpRpFzsayHlKN7tRSusGQ&usqp=CAU" onclick="zeeCinemaHd()">
+  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qvt7s8aebSgc75sx6OMQYu8PBd5e04KrSQ&usqp=CAU" onclick="zeeTvHd()">
+
+
+
+
+  <script>
+    const player = document.getElementById("player");
+
+    function starSports1Hd() {
+      player.src = "http://178.128.212.189:8081/TPL2/SLOW/playlist.m3u8";
+    }
+
+    function starPlusHd() {
+      player.src = "http://144.217.70.181:9587/hin2/STARPLUSHD/tracks-v1a1/mono.m3u8";
+    }
+    function starGoldHd() {
+      player.src = "http://144.217.70.181:9587/hin2/STARGOLDHD/tracks-v1a1/mono.m3u8";
+}
+
+    function zeeCinemaHd() {
+      player.src = "http://221.120.204.4/zee-cinema-LOCKLE/tracks-v1a1/mono.m3u8?t=tipslab";
+    }
+
+    function zeeTvHd() {
+      player.src = "http://221.120.204.4/zee-tv-LOCKLE/tracks-v1a1/mono.m3u8?t=tipslab";
+    }
+    
+  </script>
+</body>
+
+</html>
