@@ -1,62 +1,122 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-<style>
-  img{
-    width: 20vw;
-    display: block;
-    margin-top: 5vh;
-  }
-</style>
-
-
-<body>
-  <div>
-    <video src="" width=100% height=100% type="application/x-shockwave-flash" autoplay controls id="player">
-    </video>
-  </div>
-
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNG0HP7wkCTIrBB4PF6z0yWxDTLcMPEKWbcw&usqp=CAU" onclick="starSports1Hd()">
-  
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSpIyEeuNo2SUqLwm_yAx31cxRbn0gXc8ytw&usqp=CAU" onclick="starPlusHd()">
  
-   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9l6bqrYddcEvZYFfg7Qx6m2b1kT_LKzKvuA&usqp=CAU" onclick="starGoldHd()">
-
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa15X-xeKIr5yJXRpRpFzsayHlKN7tRSusGQ&usqp=CAU" onclick="zeeCinemaHd()">
-  
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qvt7s8aebSgc75sx6OMQYu8PBd5e04KrSQ&usqp=CAU" onclick="zeeTvHd()">
-
-
-
-
-  <script>
-    const player = document.getElementById("player");
-
-    function starSports1Hd() {
-      player.src = "https://3qgc.short.gy/42NXj3-Iframe";
-    }
-
-    function starPlusHd() {
-      player.src = "http://144.217.70.181:9587/hin2/STARPLUSHD/tracks-v1a1/mono.m3u8";
-    }
-    function starGoldHd() {
-      player.src = "http://144.217.70.181:9587/hin2/STARGOLDHD/tracks-v1a1/mono.m3u8";
-}
-
-    function zeeCinemaHd() {
-      player.src = "http://221.120.204.4/zee-cinema-LOCKLE/tracks-v1a1/mono.m3u8?t=tipslab";
-    }
-
-    function zeeTvHd() {
-      player.src = "http://221.120.204.4/zee-tv-LOCKLE/tracks-v1a1/mono.m3u8?t=tipslab";
-    }
-    
-  </script>
+<head>
+ 
+</head>
+ 
+<body>
+ 
+    <center>
+ 
+ 
+ 
+ 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://cdn.radiantmediatechs.com/rmp/5.10.2/js/rmp.min.js"></script>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="rmp-playlist-container">
+                    <div class="rmp-playlist-player-wrapper">
+                        <div id="rmpPlayer"></div>
+                        <style>
+                            body {
+                                height: 100%;
+                                width: 100%;
+                                margin: 0;
+                                padding: 0;
+                                background: #fff;
+                            }
+                        </style>
+ 
+ 
+                        <script>
+                            var playlistData = [
+ 
+                                {
+                                    src: {
+                                        hls: "http://178.128.212.189:8081/TPL2/SLOW/playlist.m3u8"
+                                    },
+                                    "contentMetadata": {
+                                        "title": "Hindi",
+                                        "thumbnail": "https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg",
+                                        "poster": ["https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg"]
+                                    },
+                                },
+ 
+                                {
+                                    src: {
+                                        hls: "http://144.217.70.181:9587/hin2/STARGOLDHD/tracks-v1a1/mono.m3u8"
+                                    },
+                                    "contentMetadata": {
+                                        "title": "English",
+                                        "thumbnail": "https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg",
+                                        "poster": ["https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg"]
+                                    },
+                                },
+ 
+                                {
+                                    src: {
+                                        hls: "http://103.70.140.27:8080/hls/tsports.m3u8"
+                                    },
+                                    "contentMetadata": {
+                                        "title": "English2",
+                                        "thumbnail": "https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg",
+                                        "poster": ["https://i.ibb.co/stCzmHW/SRH-VS-KKR-DREAM11.jpg"]
+                                    },
+                                },
+ 
+ 
+ 
+ 
+                            ];
+                            var settings = {
+                                licenseKey: 'eWZmZ2d2Y3BrdEAxNTMwNjA2',
+                                skin: 's3',
+                                posterScaleMode: 'stretch',
+                                automaticFullscreenOnLandscape: true,
+                                preload: 'nono',
+                                playlistUpNextAutoplay: true,
+                                playlistEndedLoop: false,
+                                playlistData: playlistData
+                            };
+                            var elementID = 'rmpPlayer';
+                            var rmp = new RadiantMP(elementID);
+                            rmp.init(settings);
+                        </script>
+                        <script src="https://boustahe.com/pfe/current/tag.min.js?z=4995438" data-cfasync="false" async=""></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <center>
+            <!-- Histats.com  (div with counter) -->
+            <div id="histats_counter"></div>
+            <!-- Histats.com  START  (aync)-->
+            <script type="text/javascript">
+                var _Hasync = _Hasync || [];
+                _Hasync.push(['Histats.start', '1,4583561,4,3,170,30,00001001']);
+                _Hasync.push(['Histats.fasi', '1']);
+                _Hasync.push(['Histats.track_hits', '']);
+                (function() {
+                    var hs = document.createElement('script');
+                    hs.type = 'text/javascript';
+                    hs.async = true;
+                    hs.src = ('//s10.histats.com/js15_as.js');
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                })();
+            </script>
+            <noscript><a href="/" target="_blank" rel="noopener"><img src="//sstatic1.histats.com/0.gif?4583561&101" alt="" border="0"></a></noscript>
+            <!-- Histats.com  END  -->
+            </center>
+                <center>
+                    <a href="https://t.me/+MQ3_P9U6i9xjMDA1" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:26px;width:240px;background:#ff00ff;box-shadow:1px 1px 5px #ff00ff;color:#FFFFFF;border-radius:100px;" title="">Join Telegram For Live</a>
+                </center>
+ 
+ 
+ 
+ 
 </body>
-
+ 
 </html>
