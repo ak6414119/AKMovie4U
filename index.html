@@ -32,6 +32,9 @@
           <label for="Movie">Movie Name :-</label><br>
           <input type="text" placeholder="Enter Movie name " id="Movie" required name="Movie"><br>
 
+     <p id="loading" style="display: none;" >Loding Please Wait... </p><br>
+
+
           <input type="submit" value="Submit" name="submit"><br>
         </form>
       </div>
@@ -42,6 +45,9 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyR3MCBe_PdnPeXFOhJfsHdWJT8CP3TWAA1wbQr54fyL_RDD11PWbn5FXZjiQNd7XL4uQ/exec'
     const form = document.forms['google-sheet']
     form.addEventListener('submit', e => {
+    let loading = document.getElementById("loading");
+    loading.style.display = "block";
+
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => window.open("home.html"))
